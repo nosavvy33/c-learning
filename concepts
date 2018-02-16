@@ -1,0 +1,34 @@
+Basic C program
+
+#include <stdio.h>
+
+int main(){
+	printf("Hello, World!\n");
+	return 0;
+}
+
+
+Preprocessor:
+
+	#include <stdio.h> is part of the pre-processor. At this very point, the code is not compile yet.
+	Before compiling, the preprocessor gives instructions as of what libs (that is another file) have to be included in the program
+	in order to compile with their required features.
+	Preprocessing commands (aka Directives) always start with #
+
+Directives: 
+
+	A directive is a preprocessor command used as a header of a C program.
+	They are useful for alot whole number of things, that go from defining static variables to functions
+	
+	#define this command writes or overwrites constants or so called Macros
+
+	Ex:
+		#include <stdio.h>
+		#ifndef MESSAGE
+			#define MESSAGE "Hello from the header section"
+		#endif
+
+		 int main(){
+		printf(MESSAGE);
+		return 0;
+		}
