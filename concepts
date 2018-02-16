@@ -20,7 +20,7 @@ Directives:
 	A directive is a preprocessor command used as a header of a C program.
 	They are useful for alot whole number of things, that go from defining static variables to functions
 	
-	#define this command writes or overwrites constants or so called Macros
+	#define this command writes or overwrites constants or so called Macros, that can be eithe constants or functions
 
 	Ex:
 		#include <stdio.h>
@@ -32,3 +32,15 @@ Directives:
 		printf(MESSAGE);
 		return 0;
 		}
+	
+	Tooltip: If a directive is too long to fit in a line, use the \ operator, this indicates that the definition
+	of the directive continues on the following line
+	
+		#define message_for(a,b) \
+			printf(#a " and " #b ": We messaged you!\n");
+
+	#defined checks whether a Macro (constant or function) is defined, returning a non-zero (true) or a zero (false)
+
+		#if !defined(MESSAGE)
+			#define MESSAGE "hELLO from the Header"
+		#endif
