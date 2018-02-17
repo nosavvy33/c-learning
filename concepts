@@ -44,3 +44,26 @@ Directives:
 		#if !defined(MESSAGE)
 			#define MESSAGE "hELLO from the Header"
 		#endif
+
+
+Storage Classes:
+
+	(For further information, see https://www.geeksforgeeks.org/storage-classes-in-c/ 
+	https://docs.microsoft.com/en-us/cpp/c-language/c-storage-classes ) 
+
+	These specifiers are for variables, and they define, mainly, the lifetime and scope of variables.
+
+	auto: default storage class, it is given a specific memory location. So, even though its scope might be limited by the block
+	it is within, it can be accessed by a pointer due to having a dedicated memory slot. This keyword is barely ever used.
+
+	register: compiler tries to store them in the microprocessor register, for it, the programs performance is faster in running time.
+	Nonetheless, if there is no register available, this register var is only stored in memory. Something useful to know is that
+	these vars cannot be accessed by a pointer as their location is not known, behaving like an auto variable.
+
+	extern: this causes variable to be visible to all program files, so to speak, it becomes a global var or func. Even though
+	this global cannot be initialized, not at least within their own code block, if invoked and initialized in another file,
+	it serves as a reference to the memory location that var is stored in.
+
+	static: Do not misunderstand this storage class... Important: static vars or funcs are only accesible within the file they
+	were defined. They keep their value through every invocation by functions (See the following accepted response in this
+	SO question: https://stackoverflow.com/questions/572547/what-does-static-mean-in-c/572550#572550 )
