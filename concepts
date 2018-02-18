@@ -69,3 +69,20 @@ Storage Classes:
 	static: Do not misunderstand this storage class... Important: static vars or funcs are only accesible within the file they
 	were defined. They keep their value through every invocation by functions (See the following accepted response in this
 	SO question: https://stackoverflow.com/questions/572547/what-does-static-mean-in-c/572550#572550 )
+
+
+Operators:
+
+	Arithmetics: They are just like the ones found in Java, Javascript, and PHP afaik.
+	(Compile and run arithmetics.c).
+
+	Relationals: These are used mainly for evaluating in conditions (Compile and run relationals.c).
+
+	Logicals: These are used to assert logic operations (Compile and run logicals.c).
+
+	Assigments: These are used to assign values (Compile and run assigns.c).
+
+	Ternary: This a very useful, yet not so known, set of operators that can express condition blocks in a single line.
+	These have to be used in a structure:
+		(condition) ? if_true_code : else_code ;
+	(Compile and run ternary.c).
