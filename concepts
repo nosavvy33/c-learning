@@ -62,7 +62,9 @@ Storage Classes:
 
 	extern: this causes variable to be visible to all program files, so to speak, it becomes a global var or func. Even though
 	this global cannot be initialized, not at least within their own code block, if invoked and initialized in another file,
-	it serves as a reference to the memory location that var is stored in.
+	it serves as a reference to the memory location that var is stored in. \ (Continuos operator, what a pun, eh!?)
+		if you feel lucky and curious, wanting to define and declare the extern var, then its value cannot be changed later
+		nor in other files, as this will get you an "already defined" error in compilation time.
 
 	static: Do not misunderstand this storage class... Important: static vars or funcs are only accesible within the file they
 	were defined. They keep their value through every invocation by functions (See the following accepted response in this
