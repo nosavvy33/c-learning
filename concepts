@@ -86,3 +86,31 @@ Operators:
 	These have to be used in a structure:
 		(condition) ? if_true_code : else_code ;
 	(Compile and run ternary.c).
+
+
+Loops:
+
+	For: Loops with a defined end declared in the second parameter, even though this can elongate to the infinite with
+	(;;) which is contraproductive as overflows the buffer.
+	
+		Syntax: for(init; condition or end; increment){
+		// statements
+		} 
+
+	Do... while: loops that go on until reaching a condition stated in the while parameter. Just as For, this
+	can go on until infinite whether the while condition is always true or ;;
+
+		Syntax: do{
+
+		}while(condition);
+
+	
+
+Notice: How to break an infinite loop?
+
+	break / continue : these two keywords have to be coded and the former just stops the loop from invoking whereas
+		the later just jumps into the next iteration.
+
+	goto : Do not ever use (again) this keyword.
+
+	Ctrl + c: if on a console, just press this shortkey and everything will stop from looping.
