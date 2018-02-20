@@ -114,3 +114,19 @@ Notice: How to break an infinite loop?
 	goto : Do not ever use (again) this keyword.
 
 	Ctrl + c: if on a console, just press this shortkey and everything will stop from looping.
+
+
+Functions:
+
+	A function is a segment of code that performs a specific task. Functions in a program can be arrange as desired: to keep order
+	to avoid spaghetti code, and whatsoever.
+
+	Difference between a function and a method
+
+	Whereas both can achieve the very same thing, functions return a specified datatype value at the end, which is defined
+	in the declaration of itself. Functions differ from methods mainly by this as both can received parameters, output stuff
+	(besides of the final value), and be called as many times as desired.
+
+	As a matter of good practices, functions are recommended to abstract processes and also to refactor spaghetti code.
+	Read somewhere, a suggestion not be taken by everyone is that a function must be seven lines long to be elegant, fully abstract,
+	and fully functional, IMHO.
